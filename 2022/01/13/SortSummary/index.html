@@ -22,17 +22,17 @@
     <meta name="description" content="Quick Sort (Randomized)Quicksort is a Divide and Conquer algorithm. Like all divide-and-conquer algorithms, it first divides a large array into two smaller subarrays and then recursively sort the suba">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Commonly Asked Sorting Method Summary">
-<meta property="og:url" content="https://wuzijian1997.github.io/2022/01/13/sort-summary/index.html">
+<meta property="og:url" content="https://wuzijian1997.github.io/2022/01/13/SortSummary/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="Quick Sort (Randomized)Quicksort is a Divide and Conquer algorithm. Like all divide-and-conquer algorithms, it first divides a large array into two smaller subarrays and then recursively sort the suba">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://wuzijian1997.github.io/2022/01/13/sort-summary/.%5Cpics%5Cquicksort.png">
-<meta property="article:published_time" content="2022-01-14T00:40:42.000Z">
-<meta property="article:modified_time" content="2022-01-14T02:27:05.333Z">
+<meta property="og:image" content="https://wuzijian1997.github.io/2022/01/13/SortSummary/quicksort.png">
+<meta property="article:published_time" content="2022-01-14T03:14:34.000Z">
+<meta property="article:modified_time" content="2022-01-14T03:16:57.183Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="Sort">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://wuzijian1997.github.io/2022/01/13/sort-summary/.%5Cpics%5Cquicksort.png">
+<meta name="twitter:image" content="https://wuzijian1997.github.io/2022/01/13/SortSummary/quicksort.png">
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link rel="icon" href="/assets/dog-ico.ico">
@@ -510,7 +510,7 @@
 </ol>
 <p>Recursively apply the <em>Step 1 &amp; 2</em> to each subarray.</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Quick Sort</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">randomizedQuickSort</span><span class="params">(vector&lt;<span class="keyword">int</span>&gt;&amp; nums, <span class="keyword">int</span> left, <span class="keyword">int</span> right)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (left &lt; right) &#123;</span><br><span class="line">        <span class="keyword">int</span> p = <span class="built_in">randomizedPartition</span>(nums, left, right);</span><br><span class="line">        <span class="built_in">randomizedQuickSort</span>(nums, left, p - <span class="number">1</span>);</span><br><span class="line">        <span class="built_in">randomizedQuickSort</span>(nums, p + <span class="number">1</span>, right);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">randomizedPartition</span><span class="params">(vector&lt;<span class="keyword">int</span>&gt;&amp; nums, <span class="keyword">int</span> left, <span class="keyword">int</span> right)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> randNum = (<span class="built_in">rand</span>() % (right - left + <span class="number">1</span>)) + left; <span class="comment">// Generate a random pivot</span></span><br><span class="line">    <span class="built_in">swap</span>(nums[right], nums[randNum]);</span><br><span class="line">    <span class="keyword">int</span> pivot = nums[right];</span><br><span class="line">    <span class="keyword">int</span> i = left - <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> j = left; j &lt; right; j++) &#123;</span><br><span class="line">        <span class="keyword">if</span> (nums[j] &lt;= pivot) &#123;</span><br><span class="line">            i++;</span><br><span class="line">            <span class="built_in">swap</span>(nums[i], nums[j]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">swap</span>(nums[i + <span class="number">1</span>], nums[right]);</span><br><span class="line">    <span class="keyword">return</span> i + <span class="number">1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><img src=".%5Cpics%5Cquicksort.png" alt="This is a picture" title="Quick Sort"></p>
+<p><img src="/2022/01/13/SortSummary/quicksort.png" alt="This is a picture"></p>
 <h1 id="Heap-Sort"><a href="#Heap-Sort" class="headerlink" title="Heap Sort"></a>Heap Sort</h1><h1 id="Bucket-Sort"><a href="#Bucket-Sort" class="headerlink" title="Bucket Sort"></a>Bucket Sort</h1>
     </article>
     <!-- license -->
@@ -667,10 +667,6 @@
         
         
         
-        
-        
-        
-        
     
     
     
@@ -694,13 +690,13 @@
         
         <li class="archive-post-item">
             <span class="archive-post-date">01/13</span>
-            <a class="archive-post-title" href="/2022/01/13/20200113/">Kadane's Algorithm</a>
+            <a class="archive-post-title" href="/2022/01/13/SortSummary/">Commonly Asked Sorting Method Summary</a>
         </li>
     
         
         <li class="archive-post-item">
             <span class="archive-post-date">01/13</span>
-            <a class="archive-post-title" href="/2022/01/13/sort-summary/">Commonly Asked Sorting Method Summary</a>
+            <a class="archive-post-title" href="/2022/01/13/20200113/">Kadane's Algorithm</a>
         </li>
     
         
