@@ -24,3 +24,10 @@ td > img {
         width: 100%;
     }
 }
+
+.project-image{
+    height: 250px; 
+    width: auto; 
+    display: block; 
+    margin: auto;
+}
