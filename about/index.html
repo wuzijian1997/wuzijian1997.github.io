@@ -22,12 +22,15 @@
 </div>
 <table class="imgtable"><tr><td>
 <!-- <a href="https://xiuzezhou.github.io/"><img src="../avatar/dog.jpg" alt="alt text" width="131px" height="150px" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td> -->
-<a href="https://wuzijian1997.github.io/"><img src="../avatar/dog.jpg" alt="alt text" width="200px" height="200px" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<a href="https://wuzijian1997.github.io/"><img src="../avatar/dog.jpg" alt="alt text" width="180px" height="180px" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
 
 <td align="left">
 <!-- <p>Research Scientist,<br /> -->
 <!-- Address: AI Research Institute, Hithink RoyalFlush Information Network Co., Ltd., No. 18 Tongshun Street, Hangzhou City, China <br />  -->
-<p>I am a first year Robotics M.S.E. student at Johns Hopkins University. Before that, I was a research assistant at the School of Automation Engineering, the University of Electronic Science and Technology of China (UESTC), for one year. I obtained my B.E. degree in Mechatronics at UESTC, in 2020. My research interests are in Robotics, 3D reconstruction, and Medical Imaging System.</p>
+<p style="text-align:justify">I am a first year Robotics M.S.E. student at Johns Hopkins University. Before that, I was a research assistant at the School of Automation Engineering, the University of Electronic Science and Technology of China (UESTC), for one year. I obtained my B.E. degree in Mechatronics Engineering at UESTC, in 2020. I'm interested in applying robotics in the field of medicine and surgery combined with computer vision,
+  machine learning, and immersive technologies. My research goal is to create a computer-integrated surgical (CIS) system
+  enabling robots to perceive special surgical or medical scenario and to decide rational actions for clinical
+  tasks.</p>
 E-mail: <a href="mailto:zwu52@jhu.edu">zwu52@jhu.edu</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Links: <a href="https://github.com/wuzijian1997">GitHub</a> | <a href="https://wuzijian1997.github.io/">Blog</a> | <a href="cv/cv.pdf">Resume</a><br />
 </td></tr></table>
 <!-- <h2>About me</h2>
@@ -133,6 +136,49 @@ frame=void
         "
       >
         <tbody>
+
+          <tr>
+            <td
+              class="tdimg"
+              style="border: 0; padding: 20px; vertical-align: center"
+            >
+              <img class = "project-image" src="images/NeRF_toy.png" style="height: 175px;" />
+            </td>
+            <td
+              class="tdcontent"
+              style="padding: 40px 40px;"
+            >
+              <p>
+                <a
+                  href="https://ciis.lcsr.jhu.edu/doku.php?id=courses%3A456%3A2022%3Aprojects%3A456-2022-23%3Aproject-23"
+                >
+                  <papertitle
+                    >Neural Radiance Fields Based Depth Estimation for Medical Diagnosis</papertitle
+                  >
+                </a>
+                <br />
+                <li style="text-align:justify">Exploiting a NeRF-based depth estimation method for auxiliary diagnosis of strep throat infection;</li>
+                <li style="text-align:justify">Proposed a method based on NeRF combining learning-based descriptor with depth supervision to tackle
+                  the challenge due to text-scarce surface and lack of views;</li>
+                <li style="text-align:justify">Comparing the results of 3D reconstruction and depth estimation with other state-of-art methods on
+                  throat dataset collected by JHH.</li>
+                <!-- <strong>Jieru Mei</strong>, Chunyu Wang, Wenjun Zeng
+                <br />
+                <em>ECCV</em>, 2018
+                <br /> -->
+              </p>
+              <div class="paper" id="mei2018archetypal">
+                <a
+                  href=""
+                  >paper</a
+                > &nbsp;&nbsp;&nbsp;&nbsp;
+                <a
+                  href=""
+                >code</a
+                >
+              </div>
+            </td>
+          </tr>
         
 
           <tr>
@@ -155,50 +201,9 @@ frame=void
                   >
                 </a>
                 <br />
-                <li>System Integration using ROS melodic.</li>
-                <li>Implemention of search algorithm for Photoacoustic virtual marker localization.</li>
-                <li>Registering endoscope camera and TRUS coordinate system for surgical tool tracking.</li>
-                <!-- <strong>Jieru Mei</strong>, Chunyu Wang, Wenjun Zeng
-                <br />
-                <em>ECCV</em>, 2018
-                <br /> -->
-              </p>
-              <div class="paper" id="mei2018archetypal">
-                <a
-                  href=""
-                  >paper</a
-                > &nbsp;&nbsp;&nbsp;&nbsp;
-                <a
-                  href=""
-                >code</a
-                >
-              </div>
-            </td>
-          </tr>
-
-          <tr>
-            <td
-              class="tdimg"
-              style="border: 0; padding: 20px; vertical-align: center"
-            >
-              <img class = "project-image" src="images/NeRF_toy.png" style="height: 175px;" />
-            </td>
-            <td
-              class="tdcontent"
-              style="padding: 40px 40px;"
-            >
-              <p>
-                <a
-                  href="https://ciis.lcsr.jhu.edu/doku.php?id=courses%3A456%3A2022%3Aprojects%3A456-2022-23%3Aproject-23"
-                >
-                  <papertitle
-                    >Photoacoustic Image Based Intro-Operative Surgical Guidance System in a da Vinci Surgical Robot Platform</papertitle
-                  >
-                </a>
-                <br />
-                <li>System Integration using ROS melodic.</li>
-                <li>Implemention of search algorithm for Photoacoustic virtual marker localization.</li>
-                <li>Registering endoscope camera and TRUS coordinate system for surgical tool tracking.</li>
+                <li style="text-align:justify">Integrated the overall system and implemented the pipeline of endoscope-to-photoacoustic image registration and surgical tool tracking;</li>
+                <li style="text-align:justify">Validated the search algorithm for photoacoustic virtual marker’s localization by simulation and experiment;</li>
+                <li style="text-align:justify">Proposed and implemented an arc-line registration algorithm requiring no coordinates in the fluorescence image.</li>
                 <!-- <strong>Jieru Mei</strong>, Chunyu Wang, Wenjun Zeng
                 <br />
                 <em>ECCV</em>, 2018
@@ -233,13 +238,14 @@ frame=void
                   href="https://ciis.lcsr.jhu.edu/doku.php?id=courses%3A456%3A2022%3Aprojects%3A456-2022-23%3Aproject-23"
                 >
                   <papertitle
-                    >Photoacoustic Image Based Intro-Operative Surgical Guidance System in a da Vinci Surgical Robot Platform</papertitle
+                    >Image-based Software System for Surface Mounting Machine</papertitle
                   >
                 </a>
                 <br />
-                <li>System Integration using ROS melodic.</li>
-                <li>Implemention of search algorithm for Photoacoustic virtual marker localization.</li>
-                <li>Registering endoscope camera and TRUS coordinate system for surgical tool tracking.</li>
+                <li style="text-align:justify">Developed a robust, accurate, and user-friendly vision system for Surface Mounting Machine for precise
+                  positioning, automatic picking, and placing of electronic components;</li>
+                <li style="text-align:justify">Built and debugged a prototype of Surface Mounting Machine from scratch;</li>
+                <li style="text-align:justify">Improved lighting system and mechanical structure of the prototype.</li>
                 <!-- <strong>Jieru Mei</strong>, Chunyu Wang, Wenjun Zeng
                 <br />
                 <em>ECCV</em>, 2018
@@ -378,8 +384,8 @@ frame=void
 <h2>Education</h2>
 <p><i>M.S.E., Robotics,</i> <a href="https://www.jhu.edu/">Johns Hopkins University</a> <span style="float: right;">09/2021 ~ Present</span></p>
 <ul>
-<li><p>Awards: Principal Level Scholarship (1st in admission)</p>
-</li>
+<!-- <li><p>Awards: Principal Level Scholarship (1st in admission)</p>
+</li> -->
 <li><p>Main Courses: Algorithms for Sensor-Based Robotics, Robot Devices, Kinematics, Dynamics, and Control, Computer Integrated Surgery I & II, 	Statistical Learning For Engineers, Vision as Bayesian Inference</Base>.</p>
 </li>
 </ul>
@@ -429,14 +435,23 @@ frame=void
 </ul>
 </ol> -->
 <h2>Work experience</h2>
+<ol>
+  <li>
+    <p><i>Research Assistant,</i> <a href="https://en.uestc.edu.cn/">School of Automation Engineering, UESTC</a> <span style="float: right;">08/2020 ~ 07/2021</span></p>
+    <i>Vision Measuring and Learning Lab</i> <span style="float: right;">Chengdu, China</span>  
+  </li>
+  <li>
+    <p><i>Research Intern,</i> <a href="https://www.jhu.edu/">Johns Hopkins University</a> <span style="float: right;">06/2022 ~ 08/2022</span></p>
+    <i>Advanced Robotics and Computationally AugmenteD Environments (ARCADE) Lab</i> <span style="float: right;">Baltimore, MD, USA</span>
+  </li>
+</ol>
 
-<p><i>Research Assistant,</i> <a href="https://en.uestc.edu.cn/">School of Automation Engineering, UESTC</a> <span style="float: right;">08/2020 ~ 07/2021</span></p>
-<ul>
+<!-- <ul>
 <li><p>Awards: Principal Level Scholarship (1st in admission)</p>
 </li>
 <li><p>Main Courses: Algorithms for Sensor-Based Robotics, Robot Devices, Kinematics, Dynamics, and Control, Computer Integrated Surgery I & II, 	Statistical Learning For Engineers, Vision as Bayesian Inference</Base>.</p>
 </li>
-</ul>
+</ul> -->
 
 <!-- <p><br /> -->
 <!-- <a href="cv/cv.pdf">A brief cv</a>.</p>
