@@ -3,13 +3,13 @@
 table#tlayout {
     border: none;
     border-collapse: separate;
-    background: white;
+    background: white(255, 255, 255);
 }
 
 body {
 	background: white;
 	font-family: Georgia, serif;
-	padding-bottom: 8px;
+	padding-bottom: 0px;
 	margin: 0;
 }
 
@@ -124,7 +124,7 @@ h1, h2, h3 {
 	padding-bottom: 0.2em;
 	line-height: 1.0;
 	padding-top: 0.5em;
-	border-bottom: 1px solid #aaaaaa;
+	border-bottom: 1px solid #000000;
 }
 
 h1 {
